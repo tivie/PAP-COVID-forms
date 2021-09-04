@@ -1,2 +1,2 @@
-# PARC-COVID
-Plataforma Automática de Rastreio de Contactos
+# PAP-COVID
+Plataforma de Apoio à Pandemia COVID-19
