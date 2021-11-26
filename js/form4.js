@@ -63,9 +63,8 @@ function carregar(ev) {
   });
 }
 $(document).ready(function () {
-
   var params = getParams();
-  document.getElementById('casehash').value = params.codigo_seguranca;
+  document.getElementById('casehash').value = params.get('codigo_seguranca');
   
   $('#carregarBtn').click(function(ev) {
     carregar(ev);
