@@ -323,6 +323,28 @@
       "title": "data_de_inicio_de_sintomas",
       "type": "string",
       "format": "date"
+    },
+    "vacinado": {
+      "$id": "#/properties/vacinado",
+      "type": "boolean",
+      "title": "vacinado"
+    },
+    "numero_de_doses_vacina": {
+      "$id": "#/properties/numero_de_doses_vacina",
+      "type": "integer",
+      "title": "numero_de_doses_vacina"
+    },
+    "data_da_primeira_dose": {
+      "$id": "#/properties/data_da_primeira_dose",
+      "title": "data_da_primeira_dose",
+      "type": "string",
+      "format": "date"
+    },
+    "data_da_ultima_dose": {
+      "$id": "#/properties/data_da_ultima_dose",
+      "title": "data_da_ultima_dose",
+      "type": "string",
+      "format": "date"
     }
   },
   "required": [

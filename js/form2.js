@@ -40,6 +40,10 @@ $(document).ready(function() {
   $('#fez_teste').click(function() {
     switchActivate($('#fez-teste-wrapper'));
   });
+
+  $('#vacinado').click(function() {
+    switchActivate($('#vacinacao-wrapper'));
+  });
   
   $('#tem_doenca_cronica').click(function () {
     var $wrapper = $('#doenca-cronica-wrapper');
@@ -146,9 +150,12 @@ function submitForm(ev) {
 
         case 'data_do_exame':
         case 'data_de_inicio_de_sintomas':
+        case 'data_da_primeira_dose':
+        case 'data_da_ultima_dose':
           val = (item.value === "" || item.value === null) ? null : item.value;
           break;
         case 'resultado_exame':
+        case 'numero_de_doses_vacina':
             val = (item.value === "" || item.value === null) ? null : parseInt(item.value);
           break;
         case 'num_utente':

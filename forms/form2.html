@@ -299,6 +299,49 @@
                 <legend>Exames e Antecedentes</legend>
 
                 <div class="form-group custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" name="vacinado" data-schema-id="#/properties/vacinado" id="vacinado">
+                    <label class="custom-control-label" for="vacinado">Fez, pelo menos, uma dose da vacina para a COVID19?
+                        <span class="required-here"></span>
+                    </label>
+                    <small id="vacinadoHelp" class="form-text text-muted">
+                        Responda sim caso tenha feito uma ou mais doses da vacina
+                    </small>
+                </div>
+
+                <div id="vacinacao-wrapper" class="form-group" style="display: none">
+                    <div class="form-group required">
+                        <label for="numero_de_doses_vacina">Quantas doses da vacina fez?</label>
+                        <select name="resultado_exame" data-schema-id="#/properties/numero_de_doses_vacina" id="numero_de_doses_vacina" class="form-control">
+                            <option hidden disabled selected value> -- seleccione uma opção --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3 ou mais</option>
+                        </select>
+                        <small id="numero_de_doses_vacinaHelp" class="form-text text-muted">
+                            Número de doses da vacina
+                        </small>
+                    </div>
+                    
+                    <div class="form-group required">
+                        <label for="data_da_primeira_dose">Data da primeira dose da vacina COVID19:</label>
+                        <input name="data_do_exame" data-schema-id="#/properties/data_da_primeira_dose" id="data_da_primeira_dose" type="date" data-type="date" class="form-control">
+                        <small id="data_da_primeira_doseHelp" class="form-text text-muted">
+                            Data em que fez a <b>PRIMEIRA</b> dose da vacina. Se não se lembrar, coloque uma data aproximada
+                        </small>
+                    </div>
+
+                    <div class="form-group required">
+                        <label for="data_da_ultima_dose">Data da ultima dose da vacina COVID19:</label>
+                        <input name="data_do_exame" data-schema-id="#/properties/data_da_ultima_dose" id="data_da_ultima_dose" type="date" data-type="date" class="form-control">
+                        <small id="data_da_ultima_doseHelp" class="form-text text-muted">
+                            Data em que fez a <b>ÚLTIMA</b> dose da vacina. Se não se lembrar, coloque uma data aproximada. Se só fez uma dose, coloque a data da primeira dose
+                        </small>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="form-group custom-control custom-switch">
                     <input type="checkbox" class="custom-control-input" name="fez_teste" data-schema-id="#/properties/fez_teste" id="fez_teste">
                     <label class="custom-control-label" for="fez_teste">Fez teste à COVID19?
                         <span class="required-here"></span>
