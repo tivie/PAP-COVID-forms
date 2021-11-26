@@ -183,6 +183,11 @@ function submitForm(ev) {
   if (payload.tem_sintomas === false) {
     delete payload.data_de_inicio_de_sintomas;
   }
+  if (payload.vacinado === false) {
+    delete payload.data_da_primeira_dose;
+    delete payload.data_da_ultima_dose;
+    delete payload.numero_de_doses_vacina;
+  }
 
   // last validation (against Schema)
   //var ajv = new Ajv();
